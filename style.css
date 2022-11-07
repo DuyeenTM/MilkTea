@@ -1,0 +1,1018 @@
+﻿/* bắt đầu css cho trang teamplate*/
+:root {
+  --cl: #ff6600;
+  --bg: url(img/background1.jpg);
+}
+@font-face {
+  font-family: FuzzyBubbles;
+  src: url(Font/Fuzzy_Bubbles/FuzzyBubbles-Regular.ttf);
+}
+@font-face {
+  font-family: Nunito;
+  src: url(Font/Nunito/Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Corinthia;
+  src: url(Font/Corinthia/Corinthia-Regular.ttf);
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: Nunito;
+  font-size: 20px;
+}
+#header {
+  position: fixed;
+  background: #f8f5f4;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  box-shadow: 4px 0px 10px #000;
+}
+#header div {
+  display: inline-block;
+}
+#header div img {
+  height: 40px;
+}
+nav {
+  float: right;
+  position: relative;
+  right: 20px;
+  bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media screen and (min-width: 1000px) {
+  #home {
+    display: none;
+  }
+  nav ul li {
+    display: inline-block;
+    list-style: none;
+  }
+  nav li ol {
+    display: none;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    background: #f8f5f4bd;
+  }
+  nav li ol li {
+    display: block;
+  }
+  nav li:hover > ol {
+    display: block;
+  }
+  nav a {
+    display: inline-block;
+    margin: 0px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cl);
+  }
+  nav a:hover {
+    color: #000 !important;
+  }
+  footer {
+    font-size: 18px;
+  }
+  footer div {
+    padding: 10px 30px;
+  }
+  footer img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 999px) {
+  #home {
+    display: block;
+    float: right;
+    padding: 17px;
+    font-size: 40px;
+    background: transparent;
+    border: none;
+    color: var(--cl);
+    cursor: pointer;
+  }
+  nav ul {
+    display: none;
+    background: #f8f5f4bd;
+    margin: 0px;
+    padding: 10px;
+  }
+  nav ul li {
+    display: block;
+    list-style: none;
+  }
+  nav li ol {
+    margin: 0px;
+    padding: 0px;
+    padding-left: 15px;
+    font-size: 18px;
+  }
+  nav a {
+    display: inline-block;
+    margin: 0px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cl);
+  }
+  nav a:hover {
+    color: #000;
+  }
+  footer {
+    font-size: 16px;
+  }
+  footer div {
+    padding: 10px;
+  }
+  footer img {
+    width: 150px;
+  }
+}
+#container {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 50px;
+  background: var(--bg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  min-height: 330px;
+}
+
+.change {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #707070;
+  padding-left: 5px;
+}
+.butchange {
+  background: transparent;
+  border: none;
+}
+.butchange span {
+  width: auto;
+  font-size: 30px;
+  padding: 0px 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+#i1 {
+  font-size: 40px;
+  color: #ff6600;
+  padding: 0px;
+}
+#i2 {
+  color: #ff6e86;
+  padding: 0px;
+}
+#i3 {
+  color: #6ed1ff;
+  padding: 0px;
+}
+#i4 {
+  color: rgb(80, 245, 129);
+  padding: 0px;
+}
+footer {
+  background: #1b1b1b;
+  height: auto;
+  text-align: center;
+  box-shadow: 4px 0px 10px #000;
+}
+footer div {
+  display: inline-block;
+  color: #ebebeb;
+  text-align: left;
+}
+#f-logo {
+  text-align: center;
+}
+footer div p a {
+  text-decoration: none;
+  color: #d8d6d6;
+}
+footer div p a:hover {
+  text-decoration: underline;
+}
+
+/* kết thúc css cho trang teamplate*/
+
+/* bắt đầu css cho trang home */
+#introduce {
+  background: url(img/hinhnen.gif) no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-family: FuzzyBubbles;
+  padding: 160px 0px 185px 0px;
+}
+
+#introduce h1 {
+  margin: 25px;
+  font-size: 80px;
+  color: var(--cl);
+  text-shadow: 3px 0 5px #fff, -3px 0 5px #fff, 0 3px 5px #fff, 0 -3px 5px #fff;
+}
+#introduce h2 {
+  margin: 10px;
+  font-size: 40px;
+  color: #fff;
+}
+#introduce p {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.content {
+  text-align: center;
+  margin: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 0px;
+}
+.content p {
+  text-align: justify;
+}
+.content div {
+  margin: 25px;
+  margin-bottom: 0px;
+  padding: 10px;
+  background: #ffffff49;
+  box-shadow: 2px 2px 10px #222222;
+}
+.content div div {
+  background: none;
+  box-shadow: none;
+}
+.content div h1 {
+  text-align: center;
+  color: #3a3a3a;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.content > div > div {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: justify;
+  padding: 15px;
+  margin: 0px;
+}
+.content #why {
+  width: 100%;
+}
+.content #why div {
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.content #why p {
+  font-size: 30px;
+}
+.far.fa-thumbs-up {
+  font-size: 50px;
+  color: #0084ff;
+}
+.far.fa-comment-dots {
+  font-size: 50px;
+  color: #ca4b02;
+}
+.fas.fa-shield-alt {
+  font-size: 50px;
+  color: #51e29a;
+}
+.fas.fa-users {
+  font-size: 50px;
+  color: #ce6abd;
+}
+img {
+  width: 100%;
+}
+.content > #menu > .a-button {
+  background: none;
+  border: none;
+  box-shadow: none;
+  text-align: center;
+}
+.content > #menu > .a-button > button {
+  background: transparent;
+  border: none;
+}
+.a-button a {
+  display: inline-block;
+  padding: 15px 30px;
+  font-family: Nunito;
+  font-size: 20px;
+  text-decoration: none;
+  background: var(--cl);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid var(--cl);
+  margin: 0px;
+}
+.a-button a:hover {
+  color: var(--cl);
+  background: #fff;
+  margin: 0px;
+}
+/* kết thúc css cho trang home */
+
+/* bắt đầu css cho trang about */
+.content div h2 {
+  text-align: center;
+  color: #3d3d3d;
+}
+#weare div {
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+}
+#weare div p {
+  font-family: Corinthia;
+  font-size: 120px;
+  text-align: center;
+}
+@-webkit-keyframes my {
+  0% {
+    color: #f8cd0a;
+  }
+  50% {
+    color: #f8990a;
+  }
+  100% {
+    color: #f8690a;
+  }
+}
+@-moz-keyframes my {
+  0% {
+    color: #f8cd0a;
+  }
+  25% {
+    color: #f8ad0a;
+  }
+  50% {
+    color: #f8990a;
+  }
+  100% {
+    color: #f8690a;
+  }
+}
+@-o-keyframes my {
+  0% {
+    color: #f8cd0a;
+  }
+  25% {
+    color: #f8ad0a;
+  }
+  50% {
+    color: #f8990a;
+  }
+  100% {
+    color: #f8690a;
+  }
+}
+@keyframes my {
+  0% {
+    color: #f8cd0a;
+  }
+  25% {
+    color: #f8ad0a;
+  }
+  50% {
+    color: #f8990a;
+  }
+  100% {
+    color: #f8690a;
+  }
+}
+#weare div p {
+  font-weight: bold;
+  -webkit-animation: my 700ms infinite;
+  -moz-animation: my 700ms infinite;
+  -o-animation: my 700ms infinite;
+  animation: my 700ms infinite;
+}
+@media screen and (max-width: 999px) {
+  #weare div {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+  }
+  #weare div p {
+    display: none;
+  }
+}
+.content .sizeauto {
+  text-align: center;
+}
+.sizeauto img {
+  width: auto;
+  margin: 0px auto;
+}
+#achievement ol {
+  width: auto;
+  margin: auto;
+  text-align: left;
+}
+#achievement li {
+  width: fit-content;
+  margin: 0px auto;
+  padding: 10px;
+  font-size: 22px;
+}
+#achievement img {
+  width: 55%;
+  margin: 25px;
+  box-shadow: 0px 0px 15px #000;
+}
+/* kết thúc css cho trang about */
+
+/* bắt đầu css cho trang location */
+#img-branch {
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+}
+#img-branch div {
+  text-align: center;
+  padding: 0px;
+  margin: 10px auto;
+  display: inline-block;
+}
+#main-location {
+  padding: 15px 100px;
+}
+#main-location a {
+  color: #000;
+  text-decoration: none;
+}
+#main-location a:hover {
+  text-decoration: underline;
+}
+#main-location h3 {
+  text-align: left;
+}
+#link-branch {
+  padding-bottom: 50px;
+}
+#link-branch button {
+  border: none;
+  background: transparent;
+  text-align: center;
+}
+
+#banner-branch {
+  margin: 0px;
+  padding: 0px;
+  height: 285px;
+  background: url(img/bgtrasua.png) no-repeat;
+  background-size: 100%;
+}
+#banner-branch h1 {
+  font-size: 50px;
+  color: var(--cl);
+  text-shadow: 3px 0 5px #fff, -3px 0 5px #fff, 0 3px 5px #fff, 0 -3px 5px #fff;
+  margin: 0px;
+  font-family: FuzzyBubbles;
+  padding-top: 100px;
+  padding-left: 50px;
+}
+/* kết thúc css cho trang location */
+
+/*bắt đầu css cho trang contact*/
+#contact {
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 20px;
+}
+#ol-I {
+  list-style-type: upper-latin;
+}
+#ol-I li {
+  padding: 8px;
+}
+#ol-I > li > ol > li {
+  display: inline-block;
+  padding: 10px 30px;
+  vertical-align: top;
+}
+#ol-I ul li {
+  list-style: url(img/call.png);
+}
+#feedback {
+  padding: 20px 40px;
+  min-height: 560px;
+  background: url(img/gopy.png);
+  background-size: 100% 100%;
+}
+#feedback > form {
+  float: right;
+}
+form {
+  margin: 0px;
+  width: 500px;
+  padding: 15px;
+  background: #ffffff52;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px #3a3a3a;
+}
+label {
+  display: inline-block;
+  width: 150px;
+  vertical-align: top;
+  padding: 8px;
+}
+input,
+textarea {
+  width: 300px;
+  padding: 8px;
+  font-size: 20px;
+  border: 1px solid #5c5c5c;
+  border-radius: 5px;
+  background: #ffffff88;
+  font-family: Nunito;
+}
+select {
+  width: 318px;
+  padding: 8px;
+  font-size: 20px;
+  border: 1px solid 5c5c5c;
+  border-radius: 5px;
+  background: #ffffff88;
+  font-family: Nunito;
+}
+
+.button {
+  margin: 0px;
+  display: inline-block;
+  padding: 10px;
+  font-family: Nunito;
+  font-size: 20px;
+  background: var(--cl);
+  border: 1px solid var(--cl);
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button:hover {
+  color: var(--cl);
+  border: 1px solid var(--cl);
+  background: #fff;
+}
+/*kết thúc css cho trang contact*/
+
+/*bắt đầu css cho trang recruitment*/
+#recruit {
+  background: url(img/tbtuyendung.png);
+  background-size: 100%;
+  text-align: center;
+  font-family: FuzzyBubbles;
+  padding: 90px 200px;
+  padding-bottom: 200px;
+}
+#recruit h1 {
+  margin: 25px;
+  font-size: 60px;
+  color: #ff6503;
+  text-shadow: 3px 0 5px #fff, -3px 0 5px #fff, 0 3px 5px #fff, 0 -3px 5px #fff;
+}
+table,
+td {
+  margin: 0px auto;
+  border: 1px solid gray;
+  border-spacing: 0px;
+}
+td {
+  padding: 10px;
+}
+#procedure {
+  padding: 10px 50px;
+}
+#procedure ol {
+  text-align: left;
+}
+#procedure ul li {
+  list-style-type: circle;
+}
+#procedure a {
+  color: black;
+}
+#procedure a:hover {
+  color: #ca4b02;
+}
+.content #ans > div {
+  width: 44%;
+  display: inline-block;
+}
+#f-recruit {
+  width: 90%;
+  font-size: 18px;
+}
+#f-recruit input,
+#f-recruit textarea {
+  width: 230px;
+  font-size: 18px;
+}
+#f-recruit select {
+  width: 245px;
+  font-size: 18px;
+}
+.content #ques {
+  margin: 0px;
+  padding: 5px;
+  text-align: left;
+}
+.content #ques div {
+  width: 95%;
+  margin: 10px 0px;
+  padding-top: 0px;
+  background: #fffafa;
+}
+.content #ques div p {
+  margin: 0px;
+  padding: 5px;
+}
+.content #ques .reply {
+  display: inline-flex;
+  text-align: left;
+}
+.content #ques .reply p i {
+  font-size: 40px;
+}
+.fas.fa-reply {
+  color: #89c0f3;
+}
+/*kết thúc css cho trang recruitment*/
+
+/*bắt đầu css cho trang menu*/
+#banner-menu {
+  background: url(img/bannermenu.png) no-repeat;
+  background-size: 100%;
+  height: 300px;
+}
+#menu h1 {
+  padding: 10px 0px;
+}
+#menu div {
+  width: 250px;
+  background: #fff1fc;
+  margin: 30px;
+  padding: 0px;
+  box-shadow: 0 0 10px #646464;
+  cursor: pointer;
+}
+#menu div:hover {
+  margin-top: 20px;
+  box-shadow: 0 0 20px #505050;
+}
+#menu p {
+  text-align: center;
+  margin: 0px;
+  padding: 10px;
+}
+#menu span {
+  color: #ff0000;
+  font-weight: bolder;
+}
+.content .sale {
+  background: #ffffffd8;
+  margin-bottom: 20px;
+  padding: 0px;
+}
+.content .sale h1 {
+  margin: 0px;
+  padding-top: 25px;
+}
+.content .sale p {
+  padding: 10px 20px;
+}
+.content .sale img {
+  padding: 0px;
+}
+.content #detail {
+  width: 90%;
+  box-shadow: none;
+}
+.content #detail div {
+  width: 30%;
+  margin: 25px;
+  padding: 0px;
+}
+.content #detail div:nth-child(2) {
+  box-shadow: 1px 1px 10px #202020;
+}
+.content #detail div:nth-child(3) {
+  padding: 0px 20px;
+  box-shadow: none;
+}
+#detail span {
+  color: #ff0000;
+  font-size: 30px;
+}
+.fas.fa-star.no {
+  color: #808080;
+}
+.fas.fa-star {
+  color: #ffae00;
+}
+.detail {
+  margin: 20px 40px 0px 40px;
+  background: #fff;
+  text-align: center;
+  padding-top: 10px;
+}
+.detail h1 {
+  text-align: center;
+  color: #3a3a3a;
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.detail #p1 {
+  box-shadow: 1px 1px 5px #000;
+}
+.detail > div > div {
+  display: inline-block;
+  width: 30%;
+  margin: 15px 30px;
+  padding: 0px;
+  box-shadow: none;
+  vertical-align: top;
+}
+.detail button {
+  width: 200px;
+  font-size: 25px;
+  font-family: Nunito;
+  font-weight: bold;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: var(--cl);
+  border: 1px solid var(--cl);
+  box-shadow: 1px 1px 3px #474747;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#buy {
+  float: left;
+}
+.detail button:hover {
+  color: var(--cl);
+  background-color: #fff;
+}
+.detail #comment {
+  width: 95%;
+  text-align: left;
+}
+.detail #left {
+  text-align: left;
+}
+.detail #left span {
+  color: #ff0000;
+  font-weight: bolder;
+  font-size: 35px;
+}
+.detail #left p:nth-child(1) {
+  color: blue;
+  font-size: 25px;
+  font-weight: bolder;
+}
+#cmtofcustomer {
+  display: inline-block;
+  box-shadow: none;
+  width: 55%;
+}
+#cmtofcustomer h3 {
+  color: #cc0000;
+}
+#cmt {
+  width: 100%;
+  color: #000000;
+}
+#cmt p {
+  margin: 5px;
+}
+#cmt i {
+  font-size: 16px;
+}
+#cmt div {
+  width: 90%;
+  background: #ebebeb;
+  margin: 10px 0px;
+  padding: 10px;
+}
+#cmt span {
+  color: var(--cl);
+  font-weight: bold;
+}
+#formcmt {
+  display: inline-block;
+  box-shadow: none;
+  width: 30%;
+  text-align: center;
+}
+#formcmt form {
+  width: 300px;
+  text-align: center;
+}
+#formcmt form p {
+  text-align: center;
+}
+#formcmt form input,
+#formcmt form textarea {
+  width: 255px;
+}
+#formcmt form select {
+  width: auto;
+}
+#sm {
+  display: inline-block;
+}
+#popup {
+  width: 100%;
+  height: 120%;
+  position: fixed;
+  top: 0px;
+  display: none;
+  background-color: #808080da;
+  margin: 0px;
+  padding-top: 10px;
+  z-index: 9999;
+}
+#popupcontent {
+  display: block;
+  width: 700px;
+  margin: 0px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px #000;
+}
+#popupcontent h4 {
+  background-color: var(--cl);
+  color: #fff;
+  margin: 0px;
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+#popup #div1 {
+  width: 370px;
+}
+#popup #form1 {
+  margin: 0px auto;
+  width: 300px;
+}
+#popupcontent .price {
+  color: #ff0000;
+  float: right;
+  padding-top: 5px;
+}
+#popupcontent h4 > span {
+  float: right;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  background: #fff;
+  color: var(--cl);
+  border-radius: 100%;
+  cursor: pointer;
+}
+#popupcontent > div > div {
+  width: 260px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+#popupcontent > div > div > p {
+  margin: 5px;
+}
+#popupcontent #form1 input:checked {
+  width: auto;
+}
+#popupcontent img {
+  width: 180px;
+}
+#popupcontent > div {
+  padding: 10px 20px;
+}
+#popupcontent .changenum {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 100%;
+  border: 1px solid var(--cl);
+  background: var(--cl);
+  color: #ffffff;
+  font-weight: bolder;
+  border: 1px solid var(--cl);
+  background: var(--cl);
+  color: #ffffff;
+  font-weight: bolder;
+  cursor: pointer;
+}
+#popupcontent .changenum:hover {
+  background: #fff;
+  color: var(--cl);
+}
+#popupcontent > div > div > form {
+  text-align: center;
+  vertical-align: middle;
+  padding: 0px;
+  padding-left: 0px;
+}
+#popupcontent > div > div > form > p {
+  text-align: left;
+}
+#sum {
+  float: right;
+  padding-right: 15px;
+  color: #ff0000;
+}
+#popupcontent > div > div > form > input {
+  width: 50px;
+  padding-left: 13px;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+}
+#popupcontent > div > div > form > input:focus {
+  outline: none;
+}
+#popupcontent div > form {
+  width: 250px;
+  padding-top: 0px;
+  text-align: left;
+  border: none;
+  box-shadow: none;
+}
+#popupcontent h5 {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+#popupcontent > div > div > form > p {
+  margin: 8px 0px;
+}
+#popupcontent div form input,
+#popupcontent div form textarea {
+  font-size: 16px;
+  width: 230px;
+  padding: 5px;
+}
+#popup #man,
+#popup #woman,
+#popup #tp1,
+#popup #tp2,
+#popup #tp3,
+#popup #tp4,
+#popup #tp5,
+#popup #tp6,
+#popup label {
+  width: auto;
+  margin: 0px;
+  padding: 5px;
+  vertical-align: middle;
+}
+#confirm {
+  font-size: 18px;
+  padding: 10px 10px;
+  font-family: Nunito;
+  width: 150px;
+  border: 1px solid var(--cl);
+  border-radius: 3px;
+  background: var(--cl);
+  color: #ffffff;
+  font-weight: bolder;
+  border: 1px solid var(--cl);
+  background: var(--cl);
+  color: #ffffff;
+  font-weight: bolder;
+  cursor: pointer;
+}
+#confirm:hover {
+  background: #fff;
+  color: var(--cl);
+}
+#comment #formcmt #vote > i {
+  color: #808080;
+  cursor: pointer;
+}
+.detail #detail {
+  text-align: left;
+  padding-left: 70px;
+  margin-right: 100px;
+}
+.detail #detail h2 {
+  color: #2e2e2e;
+  border-bottom: 1px solid #2e2e2e;
+}
+/*kết thúc css cho trang menu*/
